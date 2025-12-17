@@ -1,0 +1,34 @@
+# Ignore all node_modules in client and server
+node_modules/
+
+# Ignore build files from client or server
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+.env.* 
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+
+# Cache
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local database or temporary storage
+*.sqlite
+*.db
+
+# Local database or temporary storage
+/data
+*.sqlite
+*.db

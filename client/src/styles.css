@@ -1,0 +1,124 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+/* Button */
+
+button {
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #0055aa;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+/* Answer Card */
+
+.answer-card {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.answer-card h3 {
+    margin-top: 0;
+    color: #004080;
+}
+
+.answer-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Loading text */
+.loading {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+.citation-list {
+    background-color: #e6f2ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    list-style-type: disc;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.citation-list li {
+    margin-bottom: 5px;
+}
+
+.no-provision {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 1px solid #ffeeba;
+    font-style: italic;
+    text-align: center;
+}
+/* Make container responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    textarea {
+        min-height: 80px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
