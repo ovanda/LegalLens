@@ -21,26 +21,30 @@ function App() {
   }, [result]);
 
   return (
-    <div className="container">
-      <h1>LegalLens</h1>
+    <div className="app-container">
+      <h1 className="app-title">LegalLens</h1>
+      <div className="container">
+        <h1>LegalLens</h1>
 
-      <QuestionForm
-        setResult={setResult}
-        setLoading={setLoading}
-        setError={setError}
-      />
+        <QuestionForm
+          setResult={setResult}
+          setLoading={setLoading}
+          setError={setError}
+        />
 
-      {loading && <div className="loader"></div>}
+        {loading && <div className="loader"></div>}
 
-      {error && <div className="error">{error}</div>}
+        {error && <div className="error">{error}</div>}
 
-      {result && !error && (
-        <div ref={answerRef}>
-          <AnswerCard result={result} />
-        </div>
-      )}
+        {result && !error && (
+          <div ref={answerRef}>
+            <AnswerCard result={result} />
+          </div>
+        )}
+      </div>
     </div>
   );
+    
 }
 
 export default App;
