@@ -22,7 +22,6 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="app-title">LegalLens</h1>
       <div className="container">
         <h1>LegalLens</h1>
 

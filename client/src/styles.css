@@ -28,10 +28,12 @@ textarea {
     min-height: 100px;
     padding: 10px;
     font-size: 16px;
+    margin-right: 1000px;
     margin-bottom: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
     resize: vertical;
+    background-color: blue;
 }
 
 /* Button */
