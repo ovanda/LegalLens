@@ -1,5 +1,5 @@
 const OpenAI = require("openai");
-const client = new OpenAI({ apiKey: process.env.OPENAI_KEY });
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 exports.answer = async (question, chunks) => {
   const prompt = `${chunks}
